@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 90px;
+}
+ ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+ ul{
+    display: inline-block;
+    width: 100%;
+}
+ ul li{
+    display: inline-block;
+    position: relative;
+ }
+ ul li a {
+    display: inline-block ;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 15px;
+    transition: all ease 0.3s;
+}
+ ul li a:hover{
+    background-color: red;
+    color: #fff !important;
+}
+
+ ul li.dropdown ul{
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    padding-left: 0;
+    min-width: 180px;
+    display: none;
+}
+ ul li.dropdown ul li a{
+    color: #000;
+    width: 180px;
+}
+
+ ul li.dropdown:hover ul{
+    display: block;
+}
+:root{
+    --primary-color:#22254b;
+    --secondary-color:#373b69;
+}
+body{
+    margin: 0;
+    background-color: var(--primary-color);
+}
+.container{
+    width: 80%;
+    margin: 80px auto;
+}
+.container h1{
+    padding: 60px 0;
+    color: wheat;
+    font-size: 44px;
+    text-align: center;
+}
+.rand{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.coloana{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+.calitati-img{
+    width: 75%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.rand-img-mici{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 80%;
+}
+.img-mici{
+    position: relative;
+}
+.img-mici img{
+    width: 150px;
+}
+.rand-img-mici p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+.buton-start{
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.img-mici .buton-start{
+    width: 25px;
+
+}
+.video-player{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    
+}
+video:focus{
+    outline: none;
+}
+.buton-inchidere{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}

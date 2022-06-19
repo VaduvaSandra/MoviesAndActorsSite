@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>AFMR</title>
+	<link rel="stylesheet" href="momente.css">
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+	<img src="Logo.jpg" class="logo">
+	<ul>
+		<li class="dropdown">
+			<a href="#">Actori</a>
+			<ul class="animated fadeIn">
+				<li><a href="actoriteatru.html">Actori de teatru</a></li>
+				<li><a href="actorifilm.html">Actori de film</a></li>
+                <li><a href="actoriteleviziune.html">Actori de televiziune</a></li>
+			</ul>
+		</li>
+
+		<li class="dropdown">
+			<a href="#">Filme</a>
+			<ul class="animated fadeIn">
+				<li><a href="filmecomedie.html">Comedie</a></li>
+				<li><a href="filmeactiune.html">Actiune</a></li>
+				<li><a href="filmeistorice.html">Istoric</a></li>
+			</ul>
+
+		</li>
+		<li><a href="momente.html">Momente</a></li>
+        <li><a href="regizori.html">Regizori</a></li>
+        <li><a href="premii.html">Premii</a></li>
+        <li><a href="despre.html">Despre</a></li>
+	</ul>
+</nav>
+<div class="container">
+	<br>
+	<br>
+	<h1>Momente memorabile</h1>
+	<div class="rand">
+		<div class="coloana">
+			<div class="calitati-img">
+				<img src="cuibul-de-viespi.jpg", width="100%">
+				<img src="play.png" class="buton-start" onclick="playVideo('RepliciCuibul.mp4')">
+			</div>
+		</div>
+		<div class="coloana">
+			<div class="rand-img-mici">
+				<div class="img-mici">
+					<img src="brigada-diverse.jpg">
+					<img src="play.png" class="buton-start" onclick="playVideo('RepliciBD.mp4')">
+				</div>
+				<p>Brigada Diverse<br>Momente memorabile</p>
+			</div>
+			<div class="rand-img-mici">
+				<div class="img-mici">
+					<img src="sarademcuamza.jpg">
+					<img src="play.png" class="buton-start"onclick="playVideo('RepliciAmza.mp4')">
+				</div>
+				<p>Să râdem cu Amza<br>Momente memorabile</p>
+			</div>
+			<div class="rand-img-mici">
+				<div class="img-mici">
+					<img src="filme-romanesti-comedie.jpg">
+					<img src="play.png" class="buton-start" onclick="playVideo('RepliciFilme.mp4')">
+				</div>
+				<p>Filme românești<br>Momente memorabile</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div>
+
+<div class="video-player"  id="videoPlayer">
+<video width="100%" controls autoplay id="myVideo">
+	<source src="RepliciCuibul.mp4" type="video/mp4">
+</video>
+<img src="close.png" class="buton-inchidere" onclick="stopVideo()">
+</div>
+<script>
+	var videoPlayer = document.getElementById("videoPlayer");
+	var myVideo = document.getElementById("myVideo");
+
+	function stopVideo(){
+		videoPlayer.style.display="none";
+		
+	}
+	function playVideo(file){
+		myVideo.src=file;
+		videoPlayer.style.display="block";
+	}
+</script>
+</script>	
+</body>
+</html>
